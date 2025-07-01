@@ -39,8 +39,6 @@
     },
     "config-plugin": {
       "di-providers-web": "di-providers-web.php",
-      "di-web": "di-web.php",
-      "events-web": "events-web.php",
       "params-web": "params-web.php"
     }
   }
