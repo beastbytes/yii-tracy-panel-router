@@ -1,2 +1,2 @@
-<?php /** @var array $summary */ ?>
-<?= $summary['name'] ?>:&nbsp;<?= $summary['matchTimes'] ?>&nbsp;ms
+<?php /** @var array $router */ ?>
+<?= $router['name'] ?>:&nbsp;<?= number_format($router['matchTime'] * 1000, 3) ?>&nbsp;ms
