@@ -10,7 +10,7 @@ use Yiisoft\Definitions\Reference;
 
 return [
     'beastbytes/yii-tracy' => [
-        'panels' => [
+        'panelConfig' => [
             'router' => [
                 'class' => RouterPanel::class,
                 '__construct()' => [
