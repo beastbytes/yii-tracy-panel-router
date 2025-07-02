@@ -43,7 +43,7 @@
     </tr>
     <tr>
         <th>Match Time</th>
-        <td><?= (string)($currentRoute['matchTime'] * 1000) ?>&nbsp;ms</td>
+        <td><?= number_format($currentRoute['matchTime'] * 1000, 3) ?>&nbsp;ms</td>
     </tr>
     </tbody>
 </table>
