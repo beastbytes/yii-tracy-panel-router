@@ -38,7 +38,6 @@
       "source-directory": "config"
     },
     "config-plugin": {
-      "di-providers-web": "di-providers-web.php",
       "params-web": "params-web.php"
     }
   }
