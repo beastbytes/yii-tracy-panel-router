@@ -17,7 +17,7 @@ class Panel extends ProxyCollectorPanel
     height = "24px"
     viewBox = "0 -960 960 960"
     width = "24px"
-    fill = "#38c9fa"
+    fill = "#2ea4cc"
 >
     <path
         d = "M360-120q-66 0-113-47t-47-113v-327q-35-13-57.5-43.5T120-720q0-50 35-85t85-35q50 0 85 35t35 85q0 
