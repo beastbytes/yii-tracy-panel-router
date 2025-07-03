@@ -4,13 +4,11 @@ declare(strict_types=1);
 
 namespace BeastBytes\Yii\Tracy\Panel\Router;
 
-use BeastBytes\Yii\Tracy\Panel\CollectorPanelTrait;
 use BeastBytes\Yii\Tracy\Panel\ProxyCollectorPanel;
 use BeastBytes\Yii\Tracy\ViewTrait;
 
 class Panel extends ProxyCollectorPanel
 {
-    use CollectorPanelTrait;
     use ViewTrait;
 
     private const ICON = <<<ICON
