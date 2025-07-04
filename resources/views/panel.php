@@ -4,9 +4,10 @@
  * @var TranslatorInterface $translator
  */
 
+use BeastBytes\Yii\Tracy\Panel\Router\Panel;
 use Yiisoft\Translator\TranslatorInterface;
 
-$translator = $translator->withDefaultCategory('tracy-router');
+$translator = $translator->withDefaultCategory(Panel::MESSAGE_CATEGORY);
 ?>
 <table>
     <tbody>

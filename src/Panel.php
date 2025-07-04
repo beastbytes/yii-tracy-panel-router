@@ -11,6 +11,8 @@ class Panel extends ProxyCollectorPanel
 {
     use ViewTrait;
 
+    public const MESSAGE_CATEGORY = 'tracy-router';
+
     private const ICON = <<<ICON
 <svg
     xmlns = "http://www.w3.org/2000/svg"
