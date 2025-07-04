@@ -10,4 +10,6 @@ return [
     'router.heading.middlewares' => 'Intergiciels',
     'router.heading.name' => 'Nom',
     'router.heading.pattern' => 'Modèle',
+    'router.panel.title' => 'Routeur',
+    'router.tab.title' => 'Routeur',
 ];

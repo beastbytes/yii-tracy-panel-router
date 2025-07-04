@@ -10,4 +10,6 @@ return [
     'router.heading.middlewares' => 'Middleware',
     'router.heading.name' => 'Name',
     'router.heading.pattern' => 'Muster',
+    'router.panel.title' => 'Router',
+    'router.tab.title' => 'Router',
 ];

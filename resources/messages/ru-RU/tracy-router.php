@@ -10,4 +10,6 @@ return [
     'router.heading.middlewares' => 'Oбеспечение',
     'router.heading.name' => 'Имя',
     'router.heading.pattern' => 'Шаблон',
+    'router.panel.title' => 'Маршрутизатор',
+    'router.tab.title' => 'Маршрутизатор',
 ];
