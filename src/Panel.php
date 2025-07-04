@@ -40,7 +40,7 @@ ICON;
     protected function panelTitle(): array
     {
         return [
-            'id' => 'router.tab.title',
+            'id' => 'router.panel.title',
             'category' => 'tracy-router',
         ];
     }
@@ -58,7 +58,7 @@ ICON;
     protected function tabTitle(): array
     {
         return [
-            'id' => 'router.panel.title',
+            'id' => 'router.tab.title',
             'category' => 'tracy-router',
         ];
     }
