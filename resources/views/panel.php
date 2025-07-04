@@ -12,15 +12,15 @@ $translator = $translator->withDefaultCategory(Panel::MESSAGE_CATEGORY);
 <table>
     <tbody>
     <tr>
-        <th><?= $translator->translate('router.heading.name') ?>Name</th>
+        <th><?= $translator->translate('router.heading.name') ?></th>
         <td><?= $currentRoute['name'] ?></td>
     </tr>
     <tr>
-        <th><?= $translator->translate('router.heading.pattern') ?>Pattern</th>
+        <th><?= $translator->translate('router.heading.pattern') ?></th>
         <td><?= $currentRoute['pattern'] ?></td>
     </tr>
     <tr>
-        <th><?= $translator->translate('router.heading.host') ?>Host</th>
+        <th><?= $translator->translate('router.heading.host') ?></th>
         <td><?= $currentRoute['host'] ?></td>
     </tr>
     <tr>
@@ -28,11 +28,11 @@ $translator = $translator->withDefaultCategory(Panel::MESSAGE_CATEGORY);
         <td><?= $currentRoute['uri'] ?></td>
     </tr>
     <tr>
-        <th><?= $translator->translate('router.heading.action') ?>Action</th>
+        <th><?= $translator->translate('router.heading.action') ?></th>
         <td><?= $currentRoute['action'][0] ?>::<?= $currentRoute['action'][1] ?></td>
     </tr>
     <tr>
-        <th><?= $translator->translate('router.heading.arguments') ?>Arguments</th>
+        <th><?= $translator->translate('router.heading.arguments') ?></th>
         <td><ul>
                 <?php foreach ($currentRoute['arguments'] as $argument): ?>
                     <li><?= $argument ?></li>
@@ -40,7 +40,7 @@ $translator = $translator->withDefaultCategory(Panel::MESSAGE_CATEGORY);
             </ul></td>
     </tr>
     <tr>
-        <th><?= $translator->translate('router.heading.middlewares') ?>Middlewares</th>
+        <th><?= $translator->translate('router.heading.middlewares') ?></th>
         <td><ul>
                 <?php foreach ($currentRoute['middlewares'] as $middleware): ?>
                     <li><?= $middleware ?></li>
@@ -48,7 +48,7 @@ $translator = $translator->withDefaultCategory(Panel::MESSAGE_CATEGORY);
             </ul></td>
     </tr>
     <tr>
-        <th><?= $translator->translate('router.heading.match-time') ?>Match Time</th>
+        <th><?= $translator->translate('router.heading.match-time') ?></th>
         <td><?= number_format($currentRoute['matchTime'] * 1000, 3) ?>&nbsp;ms</td>
     </tr>
     </tbody>
