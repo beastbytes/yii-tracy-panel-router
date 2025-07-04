@@ -1,20 +1,25 @@
 <?php
 /**
  * @var array $currentRoute
+ * @var TranslatorInterface $translator
  */
+
+use Yiisoft\Translator\TranslatorInterface;
+
+$translator = $translator->withDefaultCategory('tracy-router');
 ?>
 <table>
     <tbody>
     <tr>
-        <th>Name</th>
+        <th><?= $translator->translate('router.heading.name') ?>Name</th>
         <td><?= $currentRoute['name'] ?></td>
     </tr>
     <tr>
-        <th>Pattern</th>
+        <th><?= $translator->translate('router.heading.pattern') ?>Pattern</th>
         <td><?= $currentRoute['pattern'] ?></td>
     </tr>
     <tr>
-        <th>Host</th>
+        <th><?= $translator->translate('router.heading.host') ?>Host</th>
         <td><?= $currentRoute['host'] ?></td>
     </tr>
     <tr>
@@ -22,11 +27,11 @@
         <td><?= $currentRoute['uri'] ?></td>
     </tr>
     <tr>
-        <th>Action</th>
+        <th><?= $translator->translate('router.heading.action') ?>Action</th>
         <td><?= $currentRoute['action'][0] ?>::<?= $currentRoute['action'][1] ?></td>
     </tr>
     <tr>
-        <th>Arguments</th>
+        <th><?= $translator->translate('router.heading.arguments') ?>Arguments</th>
         <td><ul>
                 <?php foreach ($currentRoute['arguments'] as $argument): ?>
                     <li><?= $argument ?></li>
@@ -34,7 +39,7 @@
             </ul></td>
     </tr>
     <tr>
-        <th>Middlewares</th>
+        <th><?= $translator->translate('router.heading.middlewares') ?>Middlewares</th>
         <td><ul>
                 <?php foreach ($currentRoute['middlewares'] as $middleware): ?>
                     <li><?= $middleware ?></li>
@@ -42,7 +47,7 @@
             </ul></td>
     </tr>
     <tr>
-        <th>Match Time</th>
+        <th><?= $translator->translate('router.heading.match-time') ?>Match Time</th>
         <td><?= number_format($currentRoute['matchTime'] * 1000, 3) ?>&nbsp;ms</td>
     </tr>
     </tbody>

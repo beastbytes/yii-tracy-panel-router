@@ -29,17 +29,18 @@ class Panel extends ProxyCollectorPanel
     />
 </svg>
 ICON;
-    
-    private const TITLE = 'Current Route';
 
     protected function panelParameters(): array
     {
         return $this->getCollected();
     }
     
-    protected function panelTitle(): string
+    protected function panelTitle(): array
     {
-        return self::TITLE;
+        return [
+            'id' => 'router.tab.title',
+            'category' => 'tracy-router',
+        ];
     }
 
     protected function tabIcon(array $parameters): string
@@ -49,12 +50,14 @@ ICON;
 
     protected function tabParameters(): array
     {
-        return $this->getSummary()
-        ;
+        return $this->getSummary();
     }
 
-    protected function tabTitle(): string
+    protected function tabTitle(): array
     {
-        return self::TITLE;
+        return [
+            'id' => 'router.panel.title',
+            'category' => 'tracy-router',
+        ];
     }
 }
