@@ -41,7 +41,7 @@ ICON;
     {
         return [
             'id' => 'router.panel.title',
-            'category' => 'tracy-router',
+            'category' => self::MESSAGE_CATEGORY,
         ];
     }
 
@@ -59,7 +59,7 @@ ICON;
     {
         return [
             'id' => 'router.tab.title',
-            'category' => 'tracy-router',
+            'category' => self::MESSAGE_CATEGORY,
         ];
     }
 }
