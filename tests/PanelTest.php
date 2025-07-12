@@ -196,7 +196,7 @@ TAB;
         );
     }
 
-    public function routesProvider(): array
+    public static function routesProvider(): array
     {
         return [
             'test.index'  => [
