@@ -33,19 +33,27 @@ $translator = $translator->withDefaultCategory(Panel::MESSAGE_CATEGORY);
     </tr>
     <tr>
         <th><?= $translator->translate('router.heading.arguments') ?></th>
-        <td><ul>
-                <?php foreach ($currentRoute['arguments'] as $argument): ?>
-                    <li><?= $argument ?></li>
+        <td>
+            <?php if (!empty($currentRoute['arguments'])): ?>
+            <ul>
+                <?php foreach ($currentRoute['arguments'] as $key => $value): ?>
+                    <li><?= "$key&nbsp;=&nbsp;$value" ?></li>
                 <?php endforeach; ?>
-            </ul></td>
+            </ul>
+            <?php endif; ?>
+        </td>
     </tr>
     <tr>
         <th><?= $translator->translate('router.heading.middlewares') ?></th>
-        <td><ul>
+        <td>
+            <?php if (!empty($currentRoute['middlewares'])): ?>
+            <ul>
                 <?php foreach ($currentRoute['middlewares'] as $middleware): ?>
                     <li><?= $middleware ?></li>
                 <?php endforeach; ?>
-            </ul></td>
+            </ul>
+            <?php endif; ?>
+        </td>
     </tr>
     <tr>
         <th><?= $translator->translate('router.heading.match-time') ?></th>
