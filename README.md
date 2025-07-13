@@ -10,9 +10,9 @@ Install the package using [Composer](https://getcomposer.org):
 
 Either:
 ```shell
-composer require beastbytes/yii-tracy-panel-router
+composer require-dev beastbytes/yii-tracy-panel-router
 ```
-or add the following to the `require` section of your `composer.json`
+or add the following to the `require-dev` section of your `composer.json`
 ```json
 "beastbytes/yii-tracy-panel-router": "<version_constraint>"
 ```
@@ -33,5 +33,5 @@ Shows the following information about the route:
 * middlewares
 
 ## License
-The BeastBytes Yii Tracy package is free software. It is released under the terms of the BSD License.
+The BeastBytes Yii Tracy Panel Router package is free software. It is released under the terms of the BSD License.
 Please see [`LICENSE`](./LICENSE.md) for more information.
