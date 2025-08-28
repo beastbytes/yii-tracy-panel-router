@@ -49,7 +49,13 @@ $translator = $translator->withDefaultCategory(Panel::MESSAGE_CATEGORY);
             <?php if (!empty($currentRoute['middlewares'])): ?>
             <ul>
                 <?php foreach ($currentRoute['middlewares'] as $middleware): ?>
-                    <li><?= $middleware ?></li>
+                    <li>
+                        <?php if (is_string($middleware)): ?>
+                            <?= $middleware ?>
+                        <?php else: ?>
+                            <?php var_dump($middleware) ?>
+                        <?php endif; ?>
+                    </li>
                 <?php endforeach; ?>
             </ul>
             <?php endif; ?>
