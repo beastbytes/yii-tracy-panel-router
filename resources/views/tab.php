@@ -1,2 +1,7 @@
-<?php /** @var array $router */ ?>
-<?= $router['name'] ?>:&nbsp;<?= number_format($router['matchTime'] * 1000, 3) ?>&nbsp;ms
+<?php
+/**
+ * @var int $matchTime
+ * @var string $name
+ */
+?>
+<?= $name ?>:&nbsp;<?= number_format($matchTime * 1000, 3) ?>&nbsp;ms
