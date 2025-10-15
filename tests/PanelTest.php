@@ -93,7 +93,7 @@ TAB;
     private const LOCALE = 'en-GB';
 
     private static ?ContainerInterface $container = null;
-    private static ?ContainerInterface $ContainerProxy = null;
+    private static ?ContainerInterface $containerProxy = null;
 
     private ?Panel $panel = null;
 
@@ -162,7 +162,7 @@ TAB;
     public function routes(string $method, string $uri, array $arguments, string $name): void
     {
         $request = new ServerRequest($method, $uri);
-        $result = self::$ContainerProxy->get(UrlMatcherInterface::class)->match($request);
+        $result = self::$containerProxy->get(UrlMatcherInterface::class)->match($request);
         $currentRoute = self::$container->get(CurrentRoute::class);
         $currentRoute->setUri(new Uri($uri));
         $currentRoute->setRouteWithArguments(
@@ -284,6 +284,6 @@ TAB;
 
     private function stripWhitespace(string $string): string
     {
-        return preg_replace('/>\s+</', '><', $string);
+        return preg_replace('/\s+(\\\|<)/', '$1', $string);
     }
 }
