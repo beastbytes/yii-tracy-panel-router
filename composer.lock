@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/beastbytes/yii-tracy.git",
-                "reference": "eeac51bda65fbce3dcd2585a4ac160a3a3379ae4"
+                "reference": "2f8b3255a1f16e8a9f1b3190777dd27b8d38ee1b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/beastbytes/yii-tracy/zipball/eeac51bda65fbce3dcd2585a4ac160a3a3379ae4",
-                "reference": "eeac51bda65fbce3dcd2585a4ac160a3a3379ae4",
+                "url": "https://api.github.com/repos/beastbytes/yii-tracy/zipball/2f8b3255a1f16e8a9f1b3190777dd27b8d38ee1b",
+                "reference": "2f8b3255a1f16e8a9f1b3190777dd27b8d38ee1b",
                 "shasum": ""
             },
             "require": {
@@ -71,7 +71,7 @@
                 "issues": "https://github.com/beastbytes/yii-tracy/issues",
                 "source": "https://github.com/beastbytes/yii-tracy/tree/main"
             },
-            "time": "2025-10-15T19:29:54+00:00"
+            "time": "2025-10-15T20:39:44+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
