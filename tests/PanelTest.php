@@ -2,9 +2,9 @@
 
 namespace BeastBytes\Yii\Tracy\Panel\Router\Tests;
 
+use BeastBytes\Yii\Tracy\ContainerProxy;
 use BeastBytes\Yii\Tracy\Panel\Router\Panel;
 use BeastBytes\Yii\Tracy\Panel\Router\Tests\Support\TestController;
-use BeastBytes\Yii\Tracy\ProxyContainer;
 use GuzzleHttp\Psr7\ServerRequest;
 use GuzzleHttp\Psr7\Uri;
 use PHPUnit\Framework\Attributes\After;
@@ -93,7 +93,7 @@ TAB;
     private const LOCALE = 'en-GB';
 
     private static ?ContainerInterface $container = null;
-    private static ?ContainerInterface $proxyContainer = null;
+    private static ?ContainerInterface $ContainerProxy = null;
 
     private ?Panel $panel = null;
 
@@ -143,8 +143,8 @@ TAB;
             ],
         ));
 
-        self::$proxyContainer = new ProxyContainer(self::$container);
-        $this->panel = $this->panel->withContainer(self::$proxyContainer);
+        self::$containerProxy = new ContainerProxy(self::$container);
+        $this->panel = $this->panel->withContainer(self::$containerProxy);
         $this->panel->startup();
     }
 
@@ -162,7 +162,7 @@ TAB;
     public function routes(string $method, string $uri, array $arguments, string $name): void
     {
         $request = new ServerRequest($method, $uri);
-        $result = self::$proxyContainer->get(UrlMatcherInterface::class)->match($request);
+        $result = self::$ContainerProxy->get(UrlMatcherInterface::class)->match($request);
         $currentRoute = self::$container->get(CurrentRoute::class);
         $currentRoute->setUri(new Uri($uri));
         $currentRoute->setRouteWithArguments(
